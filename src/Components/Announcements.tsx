@@ -8,8 +8,8 @@ export default function Announcements () {
     }
 
     return(
-        <div className="flex items-center justify-between gap-4 bg-pale-brown px-4 py-3 text-white">
-            <p className="text-sm font-medium">
+        <div className="flex items-center justify-between gap-4 bg-pale-brown px-4 py-3 text-ivory">
+            <p className="text-lg font-medium">
                 WARNING: This website is still in BETA. Please be patient.
             </p>
 

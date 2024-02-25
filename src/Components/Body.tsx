@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Carousel() {
+export default function Body() {
     return (
         <section className="bg-ivory">
             <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
@@ -22,7 +22,7 @@ export default function Carousel() {
                             />
                             <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">
                                 <h3 className="text-xl font-medium text-white">Lip Tints</h3>
-                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown">
                                     Shop Now
                                 </span>
                             </div>
@@ -38,7 +38,7 @@ export default function Carousel() {
                             />
                             <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">
                                 <h3 className="text-xl font-medium text-white">Serums</h3>
-                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown">
                                     Shop Now
                                 </span>
                             </div>
@@ -55,7 +55,7 @@ export default function Carousel() {
                             />
                             <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">
                                 <h3 className="text-xl font-medium text-white">Toners</h3>
-                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown">
                                     Shop Now
                                 </span>
                             </div>
