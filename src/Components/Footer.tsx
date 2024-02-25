@@ -1,6 +1,6 @@
 export default function Footer () {
     return(
-      <footer className="bg-ivory">
+      <footer className="bg-pink-white">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="lg:flex lg:items-start lg:gap-8">
             <div className="text-teal-600">
@@ -147,7 +147,7 @@ export default function Footer () {
             </div>
           </div>
       
-          <div className="mt-8 border-t border-gray-100 pt-8 bg-ivory">
+          <div className="mt-8 border-t border-gray-100 pt-8 bg-pink-white">
             <div className="sm:flex sm:justify-between">
               <p className="text-xs text-gray-500">&copy; 2024. Kimi Beauty. All rights reserved.</p>
       

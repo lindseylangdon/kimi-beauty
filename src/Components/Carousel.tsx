@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Carousel() {
     return (
-        <section>
+        <section className="bg-ivory">
             <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
                 <header className="text-left">
                     <h2 className="text-xl font-mono text-med-brown sm:text-3xl">New In</h2>
@@ -45,7 +45,8 @@ export default function Carousel() {
                         </a>
                     </li>
 
-                    <li className="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+                    {/* Adjusted li for toner image */}
+                    <li className="md:col-span-2 md:col-start-1 lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
                         <a href="#" className="group relative block">
                             <img
                                 src="/roundlabs.webp"
