@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Announcements () {
+    const [display, setDisplay] = useState(true);
+
+    if (!display) {
+        return null;
+    }
+
     return(
-        <div className="flex items-center justify-between gap-4 bg-pink-400 px-4 py-3 text-white">
+        <div className="flex items-center justify-between gap-4 bg-pale-brown px-4 py-3 text-white">
             <p className="text-sm font-medium">
                 WARNING: This website is still in BETA. Please be patient.
             </p>
@@ -10,6 +16,7 @@ export default function Announcements () {
             <button
                 aria-label="Dismiss"
                 className="shrink-0 rounded-lg bg-black/10 p-1 transition hover:bg-black/20"
+                onClick={() => setDisplay(false)}
             >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path
