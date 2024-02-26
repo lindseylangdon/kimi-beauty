@@ -10,7 +10,7 @@ export default function Footer () {
             <div className="mt-8 grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16">
               <div className="col-span-2">
                 <div>
-                  <h2 className="text-2xl font-bold font-mono text-gray-900">Get the latest news!</h2>
+                  <h2 className="text-2xl font-bold font-mono text-med-brown">Get the latest news!</h2>
       
                   <p className="mt-4 text-gray-500 font-mono">
                     Sign up for our company newsletter to get first access to new products and deals!

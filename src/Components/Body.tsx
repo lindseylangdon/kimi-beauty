@@ -5,8 +5,8 @@ export default function Body() {
         <section className="bg-ivory">
             <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
                 <header className="text-left">
-                    <h2 className="text-xl font-mono text-med-brown sm:text-3xl">New In</h2>
-                    <p className="text-med-brown">
+                    <h2 className="text-xl font-bold font-mono text-med-brown sm:text-3xl">New In</h2>
+                    <p className="text-med-brown text-lg font-mono">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
                         dicta incidunt est ipsam, officia dolor fugit natus?
                     </p>
