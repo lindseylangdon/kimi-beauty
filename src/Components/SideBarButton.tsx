@@ -6,8 +6,8 @@ type SideBarButtonProps = {
 
 const SideBarButton: React.FC<SideBarButtonProps> = ({onClick}) => {
     return (
-        <button onClick={onClick} className="p-5 ounded-md text-med-brown hover:text-pale-brown focus:outline-none">
-            <Menu className="lg:h-16 w-16 md:h-14 w-14" />
+        <button onClick={onClick} className="text-xl text-med-brown hover:text-pale-brown focus:outline-none underline font-mono hover:scale-110 transition-all duration-500 cursor-pointer">
+            Menu
         </button>
     );
 };

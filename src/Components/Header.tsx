@@ -3,6 +3,7 @@ import SideBarButton from './SideBarButton';
 import { Link } from 'react-router-dom';
 import { SideBarData } from './SideBarData';
 import { AiOutlineClose } from 'react-icons/ai';
+import SearchBar from './SearchBar';
 
 export default function Header () {
     const [sidebar, setSideBar] = useState(false);
@@ -14,10 +15,11 @@ export default function Header () {
         {/* Overlay when sidebar is open */}
         {sidebar && <div className="fixed inset-0 z-10" onClick={showSideBar}></div>}
         <div className="flex items-center justify-between py-10">
-            <div className="absolute top-0 left-0 z-20">
+            <div className="flex absolute top-0 left-0 z-20 p-4 items-center">
                 <Link to="#" className="menu-bars text-white">
-                    <SideBarButton onClick={showSideBar} />
+                    <SideBarButton onClick={showSideBar}/>
                 </Link>
+                <SearchBar onClick={showSideBar}/>
             </div>
             <nav className={`fixed left-0 top-0 h-full bg-pink-white bg-opacity-90 transition-all duration-300 ease-in-out ${sidebar ? 'w-64' : 'w-0'} overflow-hidden z-30 sidebar`}>
                 {/* Close button */}
@@ -31,7 +33,7 @@ export default function Header () {
                 <ul className='nav-menu-items mt-16'>
                     {SideBarData.map((item, index) => (
                         <li key={index} className={`py-4 ${item.className}`}>
-                            <Link to={item.path} className="lg:text-8xl md:text-7xl text-med-brown font-bold font-mono flex flex-col items-center transition duration-300 hover:underline hover:text-med-brown">
+                            <Link to={item.path} className="lg:text-8xl md:text-7xl text-med-brown font-bold font-mono flex flex-col items-center transition duration-300 hover:underline hover:text-med-brown hover:scale-110 transition-all duration-500 cursor-pointer">
                                 <span className="text-base">{item.title}</span>
                             </Link>
                         </li>
