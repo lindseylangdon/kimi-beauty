@@ -39,7 +39,7 @@ export default function Header () {
                 </ul>
             </nav>
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 text-center flex-grow">
-                <h1 className="lg:text-8xl md:text-7xl font-bubble outlined-text text-ivory">kimi beauty</h1>
+                <h1 className="lg:text-9xl md:text-8xl font-bubble outlined-text text-ivory">kimi beauty</h1>
                 <p className="text-2xl font-mono text-med-brown"> 
                     Omaha's First Korean Skincare and Makeup Store
                 </p>
