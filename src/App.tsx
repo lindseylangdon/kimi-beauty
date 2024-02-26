@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import Home from './Pages/Home';
-import Info from './Pages/PopUpPage';
+import PopUpPage from './Pages/PopUpPage';
+import ShopAll from './Pages/ShopAll';
+
 
 function App() {
     useEffect(() => {
@@ -13,8 +15,8 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route index element={<Home />} />
-            <Route path="/pop-ups" element={<Info />} />
-            <Route path="/shop-all"/>
+            <Route path="/pop-ups" element={<PopUpPage />} />
+            <Route path="/shop-all" element={<ShopAll />} />
             <Route path="/best-sellers"/>
             <Route path="/face"/>
             <Route path="/eyes"/>

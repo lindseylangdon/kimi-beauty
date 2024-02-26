@@ -20,7 +20,7 @@ export default function SearchBar() {
     return (
         <div className="relative">
             {isExpanded ? (
-                <form onSubmit={handleSearch} className="flex items-center border-b border-med-brown ml-2">
+                <form onSubmit={handleSearch} className="flex items-center border-b border-med-brown">
                     <input
                         ref={searchInputRef}
                         type="text"
@@ -35,7 +35,7 @@ export default function SearchBar() {
             ) : (
                 // Underlined word
                 <span
-                    className="lg:text-xl md:text-lg ml-2 text-med-brown hover:text-pale-brown focus:outline-none underline font-mono cursor-pointer"
+                    className="lg:text-xl md:text-lg text-med-brown hover:text-pale-brown focus:outline-none underline font-mono cursor-pointer"
                     onClick={() => setIsExpanded(true)} // Expand the search bar when the text is clicked
                 >
                     Search
