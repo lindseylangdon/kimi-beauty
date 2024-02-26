@@ -10,11 +10,11 @@ function App() {
     }, []);
 
   return (
-    <div className="flex flex-col min-h-screen"> {/* Make the App a flex container */}
+    <div className="flex flex-col min-h-screen">
         <Announcements />
         <Header />
         <Body />
-        <div className="flex-grow" /> {/* This is a spacer that will grow to take up any free space */}
+        <div className="flex-grow" />
         <Footer />
     </div>
   );

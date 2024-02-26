@@ -18,11 +18,11 @@ export default function Body() {
                             <img
                                 src="/swatches.jpg"
                                 alt="Swatches"
-                                className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto"
+                                className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto hover:scale-110 transition-all duration-500 cursor-pointer"
                             />
                             <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">
                                 <h3 className="text-xl font-medium text-white">Lip Tints</h3>
-                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown">
+                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown hover:scale-110 transition-all duration-500 cursor-pointer">
                                     Shop Now
                                 </span>
                             </div>
@@ -34,11 +34,11 @@ export default function Body() {
                             <img
                                 src="/anua.jpg"
                                 alt="Anua"
-                                className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto"
+                                className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto hover:scale-110 transition-all duration-500 cursor-pointer"
                             />
                             <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">
                                 <h3 className="text-xl font-medium text-white">Serums</h3>
-                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown">
+                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown hover:scale-110 transition-all duration-500 cursor-pointer">
                                     Shop Now
                                 </span>
                             </div>
@@ -51,11 +51,11 @@ export default function Body() {
                             <img
                                 src="/roundlabs.webp"
                                 alt="RoundLabs"
-                                className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto"
+                                className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto hover:scale-110 transition-all duration-500 cursor-pointer"
                             />
                             <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">
                                 <h3 className="text-xl font-medium text-white">Toners</h3>
-                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown">
+                                <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown hover:scale-110 transition-all duration-500 cursor-pointer">
                                     Shop Now
                                 </span>
                             </div>

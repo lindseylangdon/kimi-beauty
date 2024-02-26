@@ -77,11 +77,11 @@ export default function Footer () {
                   </li>
       
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
+                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Returns and Exchanges </a>
                   </li>
       
                   <li>
-                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
+                    <a href="#" className="text-gray-700 transition hover:opacity-75"> Our Distributors </a>
                   </li>
                 </ul>
               </div>
