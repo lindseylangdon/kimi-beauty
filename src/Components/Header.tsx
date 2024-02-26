@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { SideBarData } from './SideBarData';
 import { AiOutlineClose } from 'react-icons/ai';
 import SearchBar from './SearchBar';
+import PopUp from './PopUp';
 
 export default function Header () {
     const [sidebar, setSideBar] = useState(false);
@@ -19,6 +20,7 @@ export default function Header () {
                 <Link to="#" className="menu-bars text-white">
                     <SideBarButton onClick={showSideBar}/>
                 </Link>
+                <PopUp onClick={showSideBar} />
                 <SearchBar onClick={showSideBar}/>
             </div>
             <nav className={`fixed left-0 top-0 h-full bg-pink-white bg-opacity-90 transition-all duration-300 ease-in-out ${sidebar ? 'w-64' : 'w-0'} overflow-hidden z-30 sidebar`}>
@@ -41,7 +43,7 @@ export default function Header () {
                 </ul>
             </nav>
             <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 text-center flex-grow">
-                <h1 className="lg:text-9xl md:text-8xl font-bubble outlined-text text-ivory">kimi beauty</h1>
+                <h1 className="lg:text-9xl md:text-8xl md:pt-8 font-bubble outlined-text text-ivory">kimi beauty</h1>
                 <p className="text-2xl font-mono text-med-brown"> 
                     Omaha's First Korean Skincare and Makeup Store
                 </p>

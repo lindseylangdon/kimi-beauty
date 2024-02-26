@@ -1,13 +1,13 @@
 import React from 'react';
 
-type SearchBarProps = {
+type PopUpProps = {
     onClick: () => void;
 };
 
-export default function SearchBar({ onClick }: SearchBarProps) {
+export default function PopUp({ onClick }: PopUpProps) {
     return (
         <button onClick={onClick} className="lg:text-xl md:text-lg text-med-brown hover:text-pale-brown focus:outline-none underline font-mono ml-4 hover:scale-110 transition-all duration-500 cursor-pointer">
-            Search
+            Pop Ups
         </button>
     );
 }
