@@ -20,7 +20,7 @@ export default function Header () {
                 <Link to="#" className="menu-bars text-white">
                     <SideBarButton onClick={showSideBar}/>
                 </Link>
-                <PopUp onClick={showSideBar} />
+                <PopUp />
                 <SearchBar />
             </div>
             <nav className={`fixed left-0 top-0 h-full bg-pink-white bg-opacity-90 transition-all duration-300 ease-in-out ${sidebar ? 'w-64' : 'w-0'} overflow-hidden z-30 sidebar`}>

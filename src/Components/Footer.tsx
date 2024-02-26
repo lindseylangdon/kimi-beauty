@@ -40,7 +40,7 @@ export default function Footer () {
 
               </div>
       
-              <div className="col-span-2 sm:col-span-1">
+              <div className="col-span-2 sm:col-span-1 font-mono">
                 <p className="font-mono font-bold text-med-brown text-xl">Company</p>
       
                 <ul className="mt-6 space-y-4 text-sm">
@@ -54,7 +54,7 @@ export default function Footer () {
                 </ul>
               </div>
       
-              <div className="col-span-2 sm:col-span-1">
+              <div className="col-span-2 sm:col-span-1 font-mono">
                 <p className="font-mono font-bold text-med-brown text-xl">Helpful Links</p>
       
                 <ul className="mt-6 space-y-4 text-sm">
@@ -68,7 +68,7 @@ export default function Footer () {
                 </ul>
               </div>
       
-              <div className="col-span-2 sm:col-span-1">
+              <div className="col-span-2 sm:col-span-1 font-mono">
                 <p className="font-mono font-bold text-med-brown text-xl">Legal</p>
       
                 <ul className="mt-6 space-y-4 text-sm">

@@ -29,7 +29,7 @@ export default function SearchBar() {
                         onBlur={() => setIsExpanded(false)} // Hide the input when it loses focus
                     />
                     <button type="submit" className="lg:text-xl md:text-lg text-med-brown hover:text-pale-brown focus:outline-none font-mono px-2 transition-all duration-500 cursor-pointer">
-                        Search
+                        enter
                     </button>
                 </form>
             ) : (
