@@ -41,7 +41,7 @@ export default function Footer () {
               </div>
       
               <div className="col-span-2 sm:col-span-1">
-                <p className="font-medium text-gray-900">Company</p>
+                <p className="font-mono font-bold text-med-brown text-xl">Company</p>
       
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -55,7 +55,7 @@ export default function Footer () {
               </div>
       
               <div className="col-span-2 sm:col-span-1">
-                <p className="font-medium text-gray-900">Helpful Links</p>
+                <p className="font-mono font-bold text-med-brown text-xl">Helpful Links</p>
       
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
@@ -69,7 +69,7 @@ export default function Footer () {
               </div>
       
               <div className="col-span-2 sm:col-span-1">
-                <p className="font-medium text-gray-900">Legal</p>
+                <p className="font-mono font-bold text-med-brown text-xl">Legal</p>
       
                 <ul className="mt-6 space-y-4 text-sm">
                   <li>
