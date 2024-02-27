@@ -4,7 +4,7 @@ import Header from '../Components/Header';
 import Announcements from '../Components/Announcements';
 import Body from '../Components/Body';
 
-function Home() {
+export default function Home() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -19,5 +19,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

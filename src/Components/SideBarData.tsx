@@ -5,6 +5,11 @@ export const SideBarData = [
         className: 'nav-text'
     },
     {
+        title: 'Best Sellers',
+        path: '/best-sellers',
+        className: 'nav-text'
+    },
+    {
         title: 'Face',
         path: '/face',
         className: 'nav-text'

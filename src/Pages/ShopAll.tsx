@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
+import Announcements from "../Components/Announcements";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
 
-export default function ShopAll () {
+export default function PopUpPage () {
     return (
-        <>
-            <h1>Shop All</h1>
-            <Link to="/">
-                <button className="bg-blue-300">Go Home</button>
-            </Link>
-        </>
+        <div className="flex flex-col min-h-screen">
+            <Announcements />
+            <Header />
+            <h1>Add content here loll</h1>
+            <Footer />
+        </div>
     );
 }
