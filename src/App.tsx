@@ -8,6 +8,7 @@ import FacePage from './Pages/FacePage';
 import EyesPage from './Pages/EyesPage';
 import LipsPage from './Pages/LipsPage';
 import SkinCarePage from './Pages/SkinCarePage';
+import NoPage from './Pages/NoPage';
 
 function App() {
     useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/eyes" element={<EyesPage /> }/>
             <Route path="/lips" element={<LipsPage /> } />
             <Route path="/skincare" element={<SkinCarePage /> } />
+            <Route path="*" element={<NoPage /> } />
         </Routes>
     </div>
   );
