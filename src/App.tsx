@@ -11,25 +11,25 @@ import SkinCarePage from './Pages/SkinCarePage';
 import NoPage from './Pages/NoPage';
 
 function App() {
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
   return (
-    <div className="flex flex-col min-h-screen">
-        <Routes>
-            <Route path="/" element={<Home />} />
-            <Route index element={<Home />} />
-            <Route path="/pop-ups" element={<PopUpPage />} />
-            <Route path="/shop-all" element={<ShopAll />} />
-            <Route path="/best-sellers" element={<BestSellers />} />
-            <Route path="/face" element={<FacePage /> }/>
-            <Route path="/eyes" element={<EyesPage /> }/>
-            <Route path="/lips" element={<LipsPage /> } />
-            <Route path="/skincare" element={<SkinCarePage /> } />
-            <Route path="*" element={<NoPage /> } />
-        </Routes>
-    </div>
+	<div className="flex flex-col min-h-screen">
+		<Routes>
+			<Route path="/" element={<Home />} />
+			<Route index element={<Home />} />
+			<Route path="/pop-ups" element={<PopUpPage />} />
+			<Route path="/shop-all" element={<ShopAll />} />
+			<Route path="/best-sellers" element={<BestSellers />} />
+			<Route path="/face" element={<FacePage /> }/>
+			<Route path="/eyes" element={<EyesPage /> }/>
+			<Route path="/lips" element={<LipsPage /> } />
+			<Route path="/skincare" element={<SkinCarePage /> } />
+			<Route path="*" element={<NoPage /> } />
+		</Routes>
+	</div>
   );
 }
 
