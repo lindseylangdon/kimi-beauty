@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Announcements from "../Components/Announcements";
-import Header from "../Components/Header";
+import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer";
 import { useEffect } from "react";
 

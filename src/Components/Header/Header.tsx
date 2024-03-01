@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
-import SideBarButton from './SideBar/SideBarButton';
-import { Link } from 'react-router-dom';
-import { SideBarData } from './SideBar/SideBarData';
-import SearchBar from './SearchBar';
-import PopUp from './PopUp';
-import NavBar from './NavBar';
+import NavBar from '../NavBar/NavBar';
 import Title from './Title';
-import SideBar from './SideBar/SideBar';
+import SideBar from '../SideBar/SideBar';
 
 export default function Header () {
     return(

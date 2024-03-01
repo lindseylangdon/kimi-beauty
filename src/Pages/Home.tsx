@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Footer from '../Components/Footer';
-import Header from '../Components/Header';
+import Header from '../Components/Header/Header';
 import Announcements from '../Components/Announcements';
 import Body from '../Components/Body';
 
