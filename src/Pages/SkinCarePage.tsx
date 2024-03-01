@@ -13,7 +13,9 @@ export default function SkinCarePage () {
         <div className="flex flex-col flex-grow min-h-screen">
             <Announcements />
             <Header />
-            <h1 className="bg-ivory">skincare</h1>
+            <div className="flex-grow bg-ivory">
+                <h1 className="">pop-ups</h1>
+            </div>
             <Footer />
         </div>
     );

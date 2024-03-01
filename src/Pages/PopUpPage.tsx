@@ -10,11 +10,11 @@ export default function PopUpPage () {
     }, []);
     
     return (
-        <div className="flex flex-col flex-grow min-h-screen">
+        <div className="flex flex-col min-h-screen">
             <Announcements />
             <Header />
-            <div className="bg-ivory">
-                <p>pop-ups</p>
+            <div className="flex-grow bg-ivory">
+                <h1 className="">pop-ups</h1>
             </div>
             <Footer />
         </div>

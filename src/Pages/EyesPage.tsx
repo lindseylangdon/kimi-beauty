@@ -10,10 +10,12 @@ export default function EyesPage () {
     }, []);
     
     return (
-        <div className="flex flex-col flex-grow min-h-screen">
+        <div className="flex flex-col min-h-screen">
             <Announcements />
             <Header />
-            <h1 className="bg-ivory">eyeee</h1>
+            <div className="flex-grow bg-ivory">
+                <h1 className="">eyeeeee</h1>
+            </div>
             <Footer />
         </div>
     );
