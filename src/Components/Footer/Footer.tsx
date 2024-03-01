@@ -5,7 +5,7 @@ import SignUpForm from './SignUp';
 export default function Footer() {
     return (
         <footer className="">
-            <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 font-mono">
+            <div className="mx-auto py-16 px-4 sm:px-6 lg:px-20 font-mono">
                 <div className="p-4 bg-pink-white flex flex-col text-left lg:flex-row lg:items-end">
                     <div className="lg:flex lg:items-start">
                         <div className="w-full lg:w-auto">

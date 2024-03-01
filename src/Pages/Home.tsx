@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Footer from "../Components/Footer/Footer";
 import Header from '../Components/Header/Header';
 import Announcements from '../Components/Announcements';
-import Body from '../Components/HomeBody';
+import Body from '../Components/Body/HomeBody';
 
 export default function Home() {
     useEffect(() => {
