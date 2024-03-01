@@ -13,7 +13,7 @@ export default function BestSellers () {
         <div className="flex flex-col min-h-screen">
             <Announcements />
             <Header />
-            <div className="flex-grow bg-ivory">
+            <div className="flex-grow">
                 <h1 className="">best sellursss</h1>
             </div>
             <Footer />

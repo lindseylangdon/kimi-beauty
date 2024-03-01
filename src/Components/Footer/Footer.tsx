@@ -4,9 +4,9 @@ import SignUpForm from './SignUp';
 
 export default function Footer() {
     return (
-        <footer className="bg-pink-white">
+        <footer className="">
             <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 font-mono">
-                <div className="flex flex-col text-left lg:flex-row lg:items-end">
+                <div className="p-4 bg-pink-white flex flex-col text-left lg:flex-row lg:items-end">
                     <div className="lg:flex lg:items-start">
                         <div className="w-full lg:w-auto">
                             <CatGif />
@@ -24,7 +24,7 @@ export default function Footer() {
                 </div>
       
                 {/* Footer Links */}
-                <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-3">
+                <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3">
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold text-med-brown">Company</h3>
                         <ul className="space-y-2">
@@ -53,7 +53,7 @@ export default function Footer() {
       
                 {/* Copyright and Social Links */}
                 <div className="mt-12 flex flex-col items-center lg:flex-row lg:justify-between border-t border-gray-200 pt-8">
-                    <p className="text-sm text-gray-700">&copy; 2024. Kimi Beauty. All rights reserved.</p>
+                    <p className="text-sm text-gray-700">&copy; 2024. Kimi Beauty LLC. All rights reserved.</p>
                     <div className="flex justify-center space-x-6 mt-4 lg:mt-0">
                         <a href="#" className="text-gray-700 hover:opacity-75">Facebook</a>
                         <a href="#" className="text-gray-700 hover:opacity-75">Instagram</a>

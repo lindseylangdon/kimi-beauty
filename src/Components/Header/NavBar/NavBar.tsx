@@ -1,5 +1,5 @@
 import React from "react";
-import PopUp from "./PopUp";
+import PopUp from "./PopUpLink";
 import SearchBar from "./SearchBar";
 import HomeLink from "./HomeLink";
 

@@ -21,11 +21,11 @@ export default function SignUpForm() {
                 placeholder="Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full p-2 bg-transparent border-b border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:border-black focus:ring-0"
+                className="w-full p-2 bg-white border-b border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:border-black focus:ring-0"
             />
             <button
                 type="submit"
-                className="w-full sm:w-auto bg-pink-main px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-light-pink focus:outline-none focus:ring-0"
+                className="w-full sm:w-auto bg-bright-orange px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-pink-main focus:outline-none focus:ring-0"
             >
                 Submit
             </button>

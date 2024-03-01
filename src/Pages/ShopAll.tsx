@@ -13,7 +13,7 @@ export default function PopUpPage () {
         <div className="flex flex-col flex-grow min-h-screen">
             <Announcements />
             <Header />
-            <div className="flex-grow bg-ivory">
+            <div className="flex-grow">
                 <h1 className="">shop all</h1>
             </div>
             <Footer />

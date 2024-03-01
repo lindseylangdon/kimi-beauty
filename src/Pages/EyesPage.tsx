@@ -13,7 +13,7 @@ export default function EyesPage () {
         <div className="flex flex-col min-h-screen">
             <Announcements />
             <Header />
-            <div className="flex-grow bg-ivory">
+            <div className="flex-grow">
                 <h1 className="">eyeeeee</h1>
             </div>
             <Footer />

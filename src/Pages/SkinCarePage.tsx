@@ -13,7 +13,7 @@ export default function SkinCarePage () {
         <div className="flex flex-col flex-grow min-h-screen">
             <Announcements />
             <Header />
-            <div className="flex-grow bg-ivory">
+            <div className="flex-grow">
                 <h1 className="">skincare</h1>
             </div>
             <Footer />

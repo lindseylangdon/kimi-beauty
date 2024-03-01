@@ -13,7 +13,7 @@ export default function NoPage () {
         <div className="flex flex-col flex-grow min-h-screen">
             <Announcements />
             <Header />
-            <div className="bg-ivory flex flex-col items-center justify-center">
+            <div className="bg-white flex flex-col items-center justify-center">
                 <br>
                 </br>
                 <div className="flex flex-row">

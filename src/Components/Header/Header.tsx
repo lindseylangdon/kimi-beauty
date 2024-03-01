@@ -5,7 +5,7 @@ import SideBar from '../SideBar/SideBar';
 
 export default function Header () {
     return(
-        <div className="relative bg-pink-main flex flex-row items-center">
+        <div className="relative bg-pink-white flex flex-row items-center">
             <SideBar />
             <Title />
             <NavBar />
