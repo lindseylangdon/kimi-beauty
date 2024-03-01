@@ -15,7 +15,7 @@ export default function NavBar () {
     const closeSideBar = () => setSideBar(false);
 
     return(
-        <div className="flex justify-between py-10">
+        <div className="flex items-center justify-between py-10">
             <div className="flex absolute top-0 right-0 z-20 p-4 items-center md:gap-x-4 lg:gap-x-6">
                 <HomeLink />
                 <SideBarButton onClick={showSideBar}/>
@@ -34,7 +34,7 @@ export default function NavBar () {
                         </button>
                     </div>
                 )}
-                <ul className="">
+                <ul className="mt-16">
                     {SideBarData.map((item, index) => (
                         <li key={index} className={`py-4 ${item.className}`}>
                             <Link to={item.path} className="lg:text-8xl md:text-7xl text-med-brown font-bold font-mono flex flex-col items-center transition duration-300 hover:underline hover:text-med-brown hover:scale-110 transition-all duration-500 cursor-pointer">
