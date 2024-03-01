@@ -14,7 +14,7 @@ export default function SkinCarePage () {
             <Announcements />
             <Header />
             <div className="flex-grow bg-ivory">
-                <h1 className="">pop-ups</h1>
+                <h1 className="">skincare</h1>
             </div>
             <Footer />
         </div>
