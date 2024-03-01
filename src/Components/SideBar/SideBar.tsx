@@ -29,7 +29,7 @@ export default function SideBar() {
                     {SideBarData.map((item, index) => (
                         <li key={index} className={`py-4 ${item.className}`}>
                             <Link to={item.path} className="lg:text-8xl md:text-7xl text-med-brown font-bold font-mono flex flex-col items-center transition duration-300 hover:underline hover:text-med-brown hover:scale-110 transition-all duration-500 cursor-pointer">
-                                <span className="text-base">{item.title}</span>
+                                <span className="text-sm">{item.title}</span>
                             </Link>
                         </li>
                     ))}

@@ -4,7 +4,7 @@ export default function Title() {
   return (
     <div className="flex items-center justify-start">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-            <h1 className="lg:text-7xl md:text-6xl md:pt-8 font-bubble outlined-text text-bright-orange mb-1">
+            <h1 className="lg:text-7xl mb-1 md:text-6xl pt-8 mb-1 sm:text-5xl font-bubble outlined-text text-bright-orange">
                 kimi beauty
             </h1>
             {/* <div className="flex justify-center items-center">
