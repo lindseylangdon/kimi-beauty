@@ -12,21 +12,20 @@ export default function NavBar () {
 
     const showSideBar = () => setSideBar(!sidebar);
 
-    // Function to close the sidebar
     const closeSideBar = () => setSideBar(false);
 
     return(
-        <div className="flex items-center justify-between py-10">
-            <div className="flex absolute top-0 left-0 z-20 p-4 items-center md:gap-x-4 lg:gap-x-6">
+        <div className="flex justify-between py-10">
+            <div className="flex absolute top-0 right-0 z-20 p-4 items-center md:gap-x-4 lg:gap-x-6">
                 <HomeLink />
                 <SideBarButton onClick={showSideBar}/>
                 <PopUp />
                 <SearchBar />
             </div>
             {sidebar && (
-                <div className="fixed inset-0 bg-black bg-opacity-50 z-20" onClick={closeSideBar}></div> // Overlay to close sidebar
+                <div className="fixed inset-0 bg-black bg-opacity-50 z-20" onClick={closeSideBar}></div>
             )}
-            <nav className={`fixed left-0 top-0 h-full bg-pink-white bg-opacity-90 transition-all duration-300 ease-in-out ${sidebar ? 'w-64' : 'w-0'} overflow-hidden z-30 sidebar`}>
+            <nav className={`fixed right-0 top-0 h-full bg-pink-white bg-opacity-90 transition-all duration-300 ease-in-out ${sidebar ? 'w-64' : 'w-0'} overflow-hidden z-30 sidebar`}>
                 {/* Close button */}
                 {sidebar && (
                     <div className="absolute top-0 right-0 z-40 p-4">
@@ -35,7 +34,7 @@ export default function NavBar () {
                         </button>
                     </div>
                 )}
-                <ul className='nav-menu-items mt-16'>
+                <ul className="">
                     {SideBarData.map((item, index) => (
                         <li key={index} className={`py-4 ${item.className}`}>
                             <Link to={item.path} className="lg:text-8xl md:text-7xl text-med-brown font-bold font-mono flex flex-col items-center transition duration-300 hover:underline hover:text-med-brown hover:scale-110 transition-all duration-500 cursor-pointer">

@@ -9,7 +9,8 @@ module.exports = {
             'pink-main': '#ffbebe',
             'light-pink': '#ffd9d9',
             'pink-white': '#ffecec',
-            'ivory': '#fff6f6'
+            'ivory': '#fff6f6',
+            'bright-orange': '#fd631a'
         },
         fontFamily: {
             'bubble': ['kimi-header', 'Bubblegum Sans']
