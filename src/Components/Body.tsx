@@ -15,30 +15,34 @@ export default function Body() {
 
                 <ul className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
                     <li>
-                        <a href="#" className="group relative block">
-                            <img
-                                src="/swatches.jpg"
-                                alt="Swatches"
-                                className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto hover:scale-110 transition-all duration-500 cursor-pointer"
-                            />
+                        <div className="group relative block">
+                            <Link to="/lips">
+                                <img
+                                    src="/swatches.jpg"
+                                    alt="Swatches"
+                                    className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto hover:scale-110 transition-all duration-500 cursor-pointer"
+                                />
+                            </Link>
                             <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">
                                 <h3 className="text-xl font-medium text-white">Lip Tints</h3>
-                                <Link to="/lips">
+                                <Link to="/lips" className="block">
                                     <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown hover:scale-110 transition-all duration-500 cursor-pointer">
                                         Shop Now
                                     </span>
                                 </Link>
                             </div>
-                        </a>
+                        </div>
                     </li>
 
                     <li>
-                        <a href="#" className="group relative block">
-                            <img
-                                src="/anua.jpg"
-                                alt="Anua"
-                                className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto hover:scale-110 transition-all duration-500 cursor-pointer"
-                            />
+                        <div className="group relative block">
+                            <Link to="/skincare">
+                                <img
+                                    src="/anua.jpg"
+                                    alt="Anua"
+                                    className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto hover:scale-110 transition-all duration-500 cursor-pointer"
+                                />
+                            </Link>
                             <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">
                                 <h3 className="text-xl font-medium text-white">Serums</h3>
                                 <Link to="/skincare">
@@ -47,17 +51,18 @@ export default function Body() {
                                     </span>
                                 </Link>
                             </div>
-                        </a>
+                        </div>
                     </li>
 
-                    {/* Adjusted li for toner image */}
                     <li className="md:col-span-2 md:col-start-1 lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1">
-                        <a href="#" className="group relative block">
-                            <img
-                                src="/roundlabs.webp"
-                                alt="RoundLabs"
-                                className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto hover:scale-110 transition-all duration-500 cursor-pointer"
-                            />
+                        <div className="group relative block">
+                            <Link to="/skincare">
+                                <img
+                                    src="/roundlabs.webp"
+                                    alt="RoundLabs"
+                                    className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90 md:w-3/4 md:mx-auto hover:scale-110 transition-all duration-500 cursor-pointer"
+                                />
+                            </Link>
                             <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">
                                 <h3 className="text-xl font-medium text-white">Toners</h3>
                                 <Link to="/skincare">
@@ -66,7 +71,7 @@ export default function Body() {
                                     </span>
                                 </Link>
                             </div>
-                        </a>
+                        </div>
                     </li>
                 </ul>
             </div>
