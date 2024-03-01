@@ -10,7 +10,7 @@ export default function FacePage () {
     }, []);
     
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col flex-grow min-h-screen">
             <Announcements />
             <Header />
             <h1 className="bg-ivory">face cardd</h1>
