@@ -5,12 +5,14 @@ export default function NowTrending() {
   return (
     <div>
         <header>
-        <h2 className="text-xl font-bold sm:text-3xl">Now Trending</h2>
+            <h2 className="text-xl font-bold sm:text-3xl">
+                Now Trending
+            </h2>
 
-        <p className="text-lg mt-4 text-gray-500">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
-            dicta incidunt est ipsam, officia dolor fugit natus?
-        </p>
+            <p className="text-lg mt-4 text-gray-500">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
+                dicta incidunt est ipsam, officia dolor fugit natus?
+            </p>
         </header>
 
         <ul className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
