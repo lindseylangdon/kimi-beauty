@@ -5,7 +5,6 @@ export default function SearchBar() {
     const searchInputRef = useRef<HTMLInputElement>(null);
 
     useEffect(() => {
-        // Whenever the state changes to expanded, focus the input
         if (isExpanded && searchInputRef.current) {
             searchInputRef.current.focus();
         }
@@ -25,10 +24,10 @@ export default function SearchBar() {
                         ref={searchInputRef}
                         type="text"
                         placeholder="Search..."
-                        className="lg:text-lg md:text-m text-med-brown focus:outline-none font-mono px-2 py-1"
-                        onBlur={() => setIsExpanded(false)} // Hide the input when it loses focus
+                        className="lg:text-lg md:text-m sm:text-sm text-med-brown focus:outline-none font-mono px-2 py-1 sm:px-0"
+                        onBlur={() => setIsExpanded(false)}
                     />
-                    <button type="submit" className="lg:text-xl md:text-lg text-med-brown hover:text-pale-brown focus:outline-none font-mono px-2 transition-all duration-500 cursor-pointer">
+                    <button type="submit" className="lg:text-xl md:text-lg sm:text-sm text-med-brown hover:text-pale-brown focus:outline-none font-mono px-2 transition-all duration-500 cursor-pointer">
                         enter
                     </button>
                 </form>
