@@ -10,7 +10,7 @@ export default function Announcements () {
     return(
         <div className="flex items-center justify-between gap-4 bg-pale-brown px-4 py-3 text-ivory">
             <p className="text-lg font-medium font-mono">
-                WARNING: this website is in BETA. please be patient as we continue to make changes. 
+                ANNOUNCEMENT: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             </p>
 
             <button

@@ -13,7 +13,9 @@ export default function PopUpPage () {
         <div className="flex flex-col min-h-screen">
             <Announcements />
             <Header />
-            <h1 className="bg-ivory">pop-up page</h1>
+            <div className="bg-ivory">
+                <p>pop-ups</p>
+            </div>
             <Footer />
         </div>
     );

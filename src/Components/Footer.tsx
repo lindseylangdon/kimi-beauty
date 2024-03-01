@@ -1,4 +1,14 @@
+import React, { useState } from "react";
+
 export default function Footer () {
+    const [email, setEmail] = useState("");
+
+    const handleSubmit = (event: { preventDefault: () => void; }) => {
+        event.preventDefault();
+        alert(`Thanks for joining! An email will be sent shortly to: ${email}`);
+        setEmail("");
+    }
+
     return(
       <footer className="bg-pink-white">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
@@ -19,7 +29,7 @@ export default function Footer () {
               </div>
       
               <div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
-              <form className="w-full font-mono">
+              <form className="w-full font-mono" onSubmit={handleSubmit}>
                 <label htmlFor="UserEmail" className="sr-only">Email Address</label>
 
                 <div className="flex flex-col sm:flex-row items-center border border-gray-300 p-2 gap-4">
@@ -27,6 +37,8 @@ export default function Footer () {
                     type="email"
                     id="UserEmail"
                     placeholder="Email Address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="w-full p-2 bg-transparent border-b border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:border-black focus:ring-0"
                     />
                     <button
