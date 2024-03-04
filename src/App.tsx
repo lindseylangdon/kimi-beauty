@@ -2,12 +2,7 @@ import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import PopUpPage from './Pages/PopUpPage';
-import ShopAll from './Pages/ShopAll';
-import BestSellers from './Pages/BestSellers';
-import FacePage from './Pages/FacePage';
-import EyesPage from './Pages/EyesPage';
-import LipsPage from './Pages/LipsPage';
-import SkinCarePage from './Pages/SkinCarePage';
+import ProductPages from './Pages/ProductPages';
 import NoPage from './Pages/NoPage';
 import About from './Pages/FooterPages/AboutPage';
 import MeetTeam from './Pages/FooterPages/MeetTeam';
@@ -16,6 +11,7 @@ import FAQPage from './Pages/FooterPages/FAQPage';
 import AccessibilityPage from './Pages/FooterPages/AccessibilityPage';
 import ReturnsPage from './Pages/FooterPages/RerturnsPage';
 import DistributorsPage from './Pages/FooterPages/DistributorsPage';
+import PopUpBody from './Components/PopUps/PopUpBody';
 
 function App() {
 	useEffect(() => {
@@ -28,12 +24,12 @@ function App() {
 			<Route path="/" element={<Home />} />
 			<Route index element={<Home />} />
 			<Route path="/pop-ups" element={<PopUpPage />} />
-			<Route path="/shop-all" element={<ShopAll />} />
-			<Route path="/best-sellers" element={<BestSellers />} />
-			<Route path="/face" element={<FacePage /> }/>
-			<Route path="/eyes" element={<EyesPage /> }/>
-			<Route path="/lips" element={<LipsPage /> } />
-			<Route path="/skincare" element={<SkinCarePage /> } />
+            <Route path="/best-sellers" element={<ProductPages type="best sellers"/> } />
+            <Route path="/shop-all" element={<ProductPages type="shop all"/> } />
+            <Route path="/face" element={<ProductPages type="face"/> } />
+            <Route path="/eyes" element={<ProductPages type="eyes"/> } />
+            <Route path="/lips" element={<ProductPages type="lips"/> } />
+            <Route path="/skincare" element={<ProductPages type="skaannnn"/> } />
             <Route path="/about-us" element={<About /> } />
             <Route path="/meet-the-team" element={<MeetTeam /> } />
             <Route path="/contact" element={<Contact /> } />

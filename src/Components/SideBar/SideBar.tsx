@@ -28,7 +28,7 @@ export default function SideBar() {
                 <ul className="mt-16">
                     {SideBarData.map((item, index) => (
                         <li key={index} className="py-4">
-                            <Link to={item.path} className="lg:text-8xl md:text-7xl text-gray-700 font-bold font-mono flex flex-col items-center transition duration-300 hover:underline hover:text-latte hover:scale-110 transition-all duration-500 cursor-pointer">
+                            <Link to={item.path} onClick={toggleSidebar} className="lg:text-8xl md:text-7xl text-gray-700 font-bold font-mono flex flex-col items-center transition duration-300 hover:underline hover:text-latte hover:scale-110 transition-all duration-500 cursor-pointer">
                                 <span className="text-sm">{item.title}</span>
                             </Link>
                         </li>
