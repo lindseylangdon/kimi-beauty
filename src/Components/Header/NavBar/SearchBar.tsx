@@ -27,7 +27,7 @@ export default function SearchBar() {
                         className="lg:text-lg md:text-base sm:text-sm text-gray-700 focus:outline-none font-mono px-0 lg:px-2 py-1 md:px-2 py-1 sm:px-0"
                         onBlur={() => setIsExpanded(false)}
                     />
-                    <button type="submit" className="lg:text-xl md:text-lg sm:text-sm text-gray-700 hover:text-pale-brown focus:outline-none font-mono px-2 transition-all duration-500 cursor-pointer">
+                    <button type="submit" className="lg:text-lg md:text-base sm:text-sm text-gray-700 hover:text-pale-brown focus:outline-none font-mono px-2 transition-all duration-500 cursor-pointer">
                         enter
                     </button>
                 </form>

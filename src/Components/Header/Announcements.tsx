@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Announcements () {
+export default function Announcements ( announcement: { info: string } ) {
     const [display, setDisplay] = useState(true);
 
     if (!display) {
@@ -10,7 +10,7 @@ export default function Announcements () {
     return(
         <div className="flex items-center justify-between gap-4 bg-pale-yellow px-4 py-1 text-gray-700">
             <p className="text-sm lg:text-lg md:text-base sm:text-sm font-medium font-mono">
-                ANNOUNCEMENTS: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                {announcement.info}
             </p>
 
             <button
