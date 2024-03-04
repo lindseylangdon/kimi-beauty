@@ -1,10 +1,10 @@
 import React from "react";
-import Announcements from "../Components/Announcements";
-import Header from "../Components/Header/Header";
-import Footer from "../Components/Footer/Footer";
+import Announcements from "../../Components/Announcements";
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
 import { useEffect } from "react";
 
-export default function EyesPage () {
+export default function ReturnsPage () {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -14,7 +14,7 @@ export default function EyesPage () {
             <Announcements />
             <Header />
             <div className="flex-grow">
-                <h1 className="">eyeeeee</h1>
+                <p>returns and exchanges</p>
             </div>
             <Footer />
         </div>

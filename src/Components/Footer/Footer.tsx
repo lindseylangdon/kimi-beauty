@@ -1,6 +1,7 @@
 import React from 'react';
 import CatGif from './CatGif';
 import SignUpForm from './SignUp';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
@@ -26,25 +27,25 @@ export default function Footer() {
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold">Company</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-700 hover:underline">About</a></li>
-                            <li><a href="#" className="text-gray-700 hover:underline">Meet the Team</a></li>
+                            <li><Link to="/about-us" className="text-gray-700 hover:underline hover:text-gray-500">About</Link></li>
+                            <li><Link to="/meet-the-team" className="text-gray-700 hover:underline hover:text-gray-500">Meet the Team</Link></li>
                         </ul>
                     </div>
 
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold">Helpful Links</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-700 hover:underline">Contact</a></li>
-                            <li><a href="#" className="text-gray-700 hover:underline">FAQs</a></li>
+                            <li><Link to="/contact" className="text-gray-700 hover:underline hover:text-gray-500">Contact</Link></li>
+                            <li><Link to="/faqs" className="text-gray-700 hover:underline hover:text-gray-500">FAQs</Link></li>
                         </ul>
                     </div>
 
                     <div className="space-y-4">
                         <h3 className="text-lg font-bold">Legal</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-700 hover:underline">Accessibility</a></li>
-                            <li><a href="#" className="text-gray-700 hover:underline">Returns and Exchanges</a></li>
-                            <li><a href="#" className="text-gray-700 hover:underline">Our Distributors</a></li>
+                            <li><Link to="/accessibility" className="text-gray-700 hover:underline hover:text-gray-500">Accessibility</Link></li>
+                            <li><Link to="/returns-exchanges" className="text-gray-700 hover:underline hover:text-gray-500">Returns and Exchanges</Link></li>
+                            <li><Link to="/our-distributors" className="text-gray-700 hover:underline hover:text-gray-500">Our Distributors</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -55,7 +56,6 @@ export default function Footer() {
                     <div className="flex justify-center space-x-6 mt-4 lg:mt-0">
                         <a href="#" className="text-gray-700 hover:opacity-75">Facebook</a>
                         <a href="#" className="text-gray-700 hover:opacity-75">Instagram</a>
-                        <a href="#" className="text-gray-700 hover:opacity-75">GitHub</a>
                     </div>
                 </div>
             </div>
