@@ -13,6 +13,7 @@ export default function PopUpBody() {
 					<div className="flex flex-col">
 						<span className="flex-shrink mx-4 mb-4 font-bold lg:text-xl">{item.title}</span>
 						<p className="mx-4 mb-6">Date: {item.date} from {item.time}</p>
+                        <img alt={item.title} src={`${process.env.PUBLIC_URL}/${item.image}`} className="w-1/3 ml-2"/>
 					</div>
 					<div className="flex-grow border-t border-pink-main mt-2"></div>
 					</>
@@ -22,6 +23,7 @@ export default function PopUpBody() {
 					<div className="flex flex-col">
 						<span className="flex-shrink mx-4 mb-4 font-bold lg:text-xl">{item.title}</span>
 						<p className="mx-4 mb-6">Date: {item.date} from {item.time}</p>
+                        <img alt={item.title} src={`${process.env.PUBLIC_URL}/${item.image}`} className="w-1/3 mr-2"/>
 					</div>
 					</>
 				}

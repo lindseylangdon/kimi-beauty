@@ -2,9 +2,19 @@ import React, { useState } from 'react';
 
 export default function SignUpForm() {
 	const [email, setEmail] = useState('');
+    const [isBlankEmail, setIsBlankEmail] = useState(false);
 
-	const handleSubmit = (event: { preventDefault: () => void; }) => {
-		event.preventDefault();
+	function handleSubmit (e: { preventDefault: () => void; }) {
+		e.preventDefault();
+
+        if (email.trim() === "") {
+            setIsBlankEmail(true);
+            return;
+        }
+        else{
+            setIsBlankEmail(false);
+        }
+
 		alert(`Thanks for joining! An email will be sent shortly to: ${email}`);
 		setEmail('');
 	};
@@ -29,6 +39,11 @@ export default function SignUpForm() {
             >
                 Submit
             </button>
+            {isBlankEmail && 
+                <div className="font-mono text-bright-orange text-sm">
+                    Please enter a valid email.
+                </div>
+            }
         </div>
     </form>
     );

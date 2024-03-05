@@ -32,7 +32,6 @@ export default function SearchBar() {
                     </button>
                 </form>
             ) : (
-                // Underlined word
                 <span
                     className="lg:text-xl md:text-lg text-gray-700 hover:text-pale-brown focus:outline-none underline font-mono cursor-pointer"
                     onClick={() => setIsExpanded(true)} // Expand the search bar when the text is clicked

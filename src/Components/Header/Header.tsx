@@ -5,6 +5,8 @@ import SideBar from '../SideBar/SideBar';
 import Announcements from './Announcements';
 
 export default function Header () {
+    const WebTitle = "kimi beauty";
+
     return(
         <div>
             <Announcements 
@@ -13,7 +15,7 @@ export default function Header () {
             <div className="relative bg-pink-white flex flex-row items-center">
                 <SideBar />
                 <Title 
-                    title="kimi beauty" 
+                    title={WebTitle}
                 />
                 <NavBar />
             </div>

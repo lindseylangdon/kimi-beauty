@@ -65,7 +65,7 @@ export default function NowTrending() {
         
                 <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6 sm:p-2">
                     <h3 className="text-xl font-medium text-white">Blush</h3>
-                    <Link to="/fave">
+                    <Link to="/face">
                         <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 sm:px-4 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown hover:scale-105 transition-all duration-500 cursor-pointer">
                             Shop Now
                         </span>

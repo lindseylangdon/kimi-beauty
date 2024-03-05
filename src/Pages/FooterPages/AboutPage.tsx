@@ -12,7 +12,7 @@ export default function About () {
         <div className="flex flex-col min-h-screen">
             <Header />
             <div className="flex-grow">
-                <p>about us</p>
+                <p className="font-mono text-gray-700 text-left">about us</p>
             </div>
             <Footer />
         </div>
