@@ -12,7 +12,7 @@ export default function Header () {
             <Announcements 
                 info={announcement}
             />
-            <div className=" mx-auto padding-x relative bg-pink-white flex flex-row">
+            <div className="mx-auto relative bg-pink-white flex flex-row">
                 {/* <SideBar /> */}
                 <Title 
                     title={WebTitle}
