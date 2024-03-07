@@ -4,10 +4,20 @@ export default function SignUpForm() {
 	const [email, setEmail] = useState('');
     const [isBlankEmail, setIsBlankEmail] = useState(false);
 
+    const validateEmail = ( email : string): boolean => {
+        return Boolean(
+            email
+                .toLowerCase()
+                .match(
+                    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\\.,;:\s@\"]+\.)+[^<>()[\]\\.,;:\s@\"]{2,})$/i
+                )
+        );
+    };
+
 	function handleSubmit (e: { preventDefault: () => void; }) {
 		e.preventDefault();
 
-        if (email.trim() === "") {
+        if (email.trim() === "" || !validateEmail(email)) {
             setIsBlankEmail(true);
             return;
         }
@@ -15,7 +25,7 @@ export default function SignUpForm() {
             setIsBlankEmail(false);
         }
 
-		alert(`Thanks for joining! An email will be sent shortly to: ${email}`);
+		alert("Thanks for joining! An email will be sent shortly to your inbox.");
 		setEmail('');
 	};
 
