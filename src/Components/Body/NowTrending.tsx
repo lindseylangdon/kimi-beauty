@@ -5,7 +5,7 @@ export default function NowTrending() {
   return (
     <div>
         <header>
-            <h2 className="text-xl font-bold sm:text-3xl">
+            <h2 className="text-3xl font-bold lg:mt-4">
                 Now Trending
             </h2>
 
@@ -17,17 +17,17 @@ export default function NowTrending() {
 
         <ul className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             <li className="group block overflow-hidden relative">
-                <Link to="/skincare">
+                <Link to="/face">
                     <img
-                        src="/serums.jpg"
+                        src="/toner.jpg"
                         alt=""
                         className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
                     />
                 </Link>
         
                 <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6 sm:p-2">
-                    <h3 className="text-xl font-medium text-white">Serums</h3>
-                    <Link to="/skincare">
+                    <h3 className="text-xl font-medium text-white">Cushions</h3>
+                    <Link to="/face">
                         <span className="mt-1.5 inline-block bg-med-brown px-5 py-3 sm:px-4 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown hover:scale-105 transition-all duration-500 cursor-pointer">
                             Shop Now
                         </span>
@@ -38,7 +38,7 @@ export default function NowTrending() {
             <li className="group block overflow-hidden relative">
                 <Link to="/lips">
                         <img
-                            src="/lip-tints.jpg"
+                            src="/toner-pad.jpg"
                             alt=""
                             className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
                         />
@@ -57,7 +57,7 @@ export default function NowTrending() {
             <li className="group block overflow-hidden relative">
                 <Link to="/face">
                     <img
-                        src="/blushes.jpg"
+                        src="/cleansing-oil.jpg"
                         alt=""
                         className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
                     />
@@ -76,7 +76,7 @@ export default function NowTrending() {
             <li className="group block overflow-hidden relative">
                 <Link to="/eyes">
                     <img
-                        src="/eyeshadow.jpg"
+                        src="/anua-green.jpg"
                         alt=""
                         className="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
                     />

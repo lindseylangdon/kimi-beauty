@@ -4,15 +4,16 @@ export default function SignUpForm() {
 	const [email, setEmail] = useState('');
     const [isBlankEmail, setIsBlankEmail] = useState(false);
 
-    const validateEmail = ( email : string): boolean => {
+    const validateEmail = (email: string): boolean => {
         return Boolean(
             email
                 .toLowerCase()
                 .match(
-                    /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\\.,;:\s@\"]+\.)+[^<>()[\]\\.,;:\s@\"]{2,})$/i
+                    /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/i
                 )
         );
     };
+    
 
 	function handleSubmit (e: { preventDefault: () => void; }) {
 		e.preventDefault();
@@ -35,14 +36,16 @@ export default function SignUpForm() {
             Email Address
         </label>
         <div className="flex flex-col sm:flex-row items-center border border-gray-300 p-2 gap-4">
-            <input
-                type="email"
-                id="UserEmail"
-                placeholder="Email Address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full p-2 bg-white border-b border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:border-black focus:ring-0"
-            />
+        <input
+            type="email"
+            id="UserEmail"
+            name="email" // Name attribute added for form data identification and autofill
+            placeholder="Email Address"
+            value={email}
+            autoComplete="email"
+            onChange={(e) => setEmail(e.target.value)}
+            className="w-full p-2 bg-white border-b border-gray-300 text-gray-700 placeholder-gray-500 focus:outline-none focus:border-black focus:ring-0"
+        />
             <button
                 type="submit"
                 className="w-full sm:w-auto bg-bright-orange px-6 py-2 text-sm font-medium text-white transition-colors hover:bg-pink-main focus:outline-none focus:ring-0"

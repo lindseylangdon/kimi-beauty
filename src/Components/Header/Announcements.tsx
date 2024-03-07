@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { DisplayConst } from "../../App";
 
 export default function Announcements ( announcement: { info: string } ) {

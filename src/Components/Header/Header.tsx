@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBar from './NavBar/NavBar';
 import Title from './Title';
-import SideBar from '../SideBar/SideBar';
 import Announcements from './Announcements';
 
 export default function Header () {
@@ -13,8 +12,8 @@ export default function Header () {
             <Announcements 
                 info={announcement}
             />
-            <div className="relative bg-pink-white flex flex-row items-center">
-                <SideBar />
+            <div className=" mx-auto padding-x relative bg-pink-white flex flex-row">
+                {/* <SideBar /> */}
                 <Title 
                     title={WebTitle}
                 />

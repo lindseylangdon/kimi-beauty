@@ -25,3 +25,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.padding-x {
+    padding-left: 1rem; /* 16px if the root font-size is 16px */
+    padding-right: 1rem; /* 16px if the root font-size is 16px */
+}
+
+.padding-y {
+    padding-top: 0.5rem; /* 8px if the root font-size is 16px */
+    padding-bottom: 0.5rem; /* 8px if the root font-size is 16px */
+}
+
+@media (min-width: 640px) { /* sm: breakpoint */
+    .padding-x {
+        padding-left: 1.5rem; /* 24px if the root font-size is 16px */
+        padding-right: 1.5rem; /* 24px if the root font-size is 16px */
+    }
+    .padding-y {
+        padding-top: 0.75rem; /* 12px if the root font-size is 16px */
+        padding-bottom: 0.75rem; /* 12px if the root font-size is 16px */
+    }
+}
+
+@media (min-width: 1024px) { /* lg: breakpoint */
+    .padding-x {
+        padding-left: 5rem; /* 80px if the root font-size is 16px */
+        padding-right: 5rem; /* 80px if the root font-size is 16px */
+    }
+}
+
+.max-w-screen-lg {
+    max-width: 1024px; /* max-width */
+    margin-left: auto;
+    margin-right: auto;
+  }
