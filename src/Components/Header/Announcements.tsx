@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { DisplayConst } from "../../App";
 
 export default function Announcements ( announcement: { info: string } ) {
-    const [display, setDisplay] = useState(true);
+    const { display, setDisplay } = useContext(DisplayConst);
+
+    // const [display, setDisplay] = useState(true);
 
     if (!display) {
         return null;

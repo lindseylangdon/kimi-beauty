@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, createContext, SetStateAction, Dispatch } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import ProductPages from './Pages/ProductPages';
@@ -18,13 +18,26 @@ import PopUpBody from './Components/PopUps/PopUpBody';
 import LipsBody from './Components/Body/LipsBody';
 import SkinBody from './Components/Body/SkinBody';
 
+type DisplayContextType = {
+    display: boolean;
+    setDisplay: Dispatch<SetStateAction<boolean>>;
+}
+
+export const DisplayConst = createContext<DisplayContextType>({
+    display: true,
+    setDisplay: () => {},
+})
+
 function App() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
+    const [display, setDisplay] = useState(true);
+
   return (
 	<div className="flex flex-col min-h-screen">
+        <DisplayConst.Provider value={{display, setDisplay}}>
 		<Routes>
 			<Route path="/" element={<Home />} />
 			<Route index element={<Home />} />
@@ -44,6 +57,7 @@ function App() {
             <Route path="/our-distributors" element={<DistributorsPage /> } />
 			<Route path="*" element={<ProductPages body={ErrBody} /> } />
 		</Routes>
+        </DisplayConst.Provider>
 	</div>
   );
 }

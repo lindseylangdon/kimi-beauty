@@ -6,11 +6,12 @@ import Announcements from './Announcements';
 
 export default function Header () {
     const WebTitle = "kimi beauty";
+    const announcement ="ANNOUNCEMENTS: Lorem ipsum, dolor sit amet consectetur adipisicing elit.";
 
     return(
         <div>
             <Announcements 
-                info="ANNOUNCEMENTS: Lorem ipsum, dolor sit amet consectetur adipisicing elit." 
+                info={announcement}
             />
             <div className="relative bg-pink-white flex flex-row items-center">
                 <SideBar />
