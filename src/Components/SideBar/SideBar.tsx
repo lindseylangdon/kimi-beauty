@@ -16,10 +16,10 @@ export default function SideBar() {
             {isOpen && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 z-20" onClick={toggleSidebar}></div>
             )}
-            <nav className={`fixed left-0 top-0 h-full bg-white bg-opacity-100 transition-all duration-300 ease-in-out ${isOpen ? 'w-64' : 'w-0'} overflow-hidden z-30`}>
+            <nav className={`fixed right-0 top-0 h-full bg-white bg-opacity-100 transition-all duration-300 ease-in-out ${isOpen ? 'w-64' : 'w-0'} overflow-hidden z-30`}>
                 {/* Close button */}
                 {isOpen && (
-                    <div className="absolute top-0 left-0 z-40 p-4">
+                    <div className="absolute top-0 right-0 z-40 p-4">
                         <button onClick={toggleSidebar} className="text-gray-700 text-xl font-bold font-mono bg-latte rounded-lg p-1">
                             <AiOutlineClose />
                         </button>

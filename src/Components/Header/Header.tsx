@@ -14,7 +14,7 @@ export default function Header () {
                 info={announcement}
             />
             <div className="mx-auto relative bg-pink-white flex flex-col">
-                <div className="flex flex-row">
+                <div className="flex flex-row items-end">
                     {/* <SideBar /> */}
                     <Title 
                         title={WebTitle}

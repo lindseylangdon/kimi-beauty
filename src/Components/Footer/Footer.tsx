@@ -7,11 +7,11 @@ export default function Footer() {
   return (
 	<footer className="font-mono bg-pink-white text-gray-700">
 		<div className="mx-auto px-4 sm:px-6">
-			<div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
+			<div className="flex flex-col lg:items-center lg:justify-between">
 				<div className="lg:flex">
 					<CatGif />
 					<div className="mt-4">
-						<h2 className="text-3xl font-bold mt-4">
+						<h2 className="text-2xl font-bold mt-4">
 							Get the latest news!
 						</h2>
 						<p className="mt-2 mb-4">

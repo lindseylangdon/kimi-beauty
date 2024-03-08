@@ -1,15 +1,16 @@
 import React from "react";
 import SearchBar from "./SearchBar";
-import NavLink from "./NavLink";
+import SideBar from "../../SideBar/SideBar";
 
 export default function NavBar () {
 
     return(
         <div className="flex items-center justify-between py-8">
-            <div className="flex absolute top-0 right-0 z-20 p-4 items-center gap-x-4 sm:gap-x-4 md:gap-x-4 lg:gap-x-6">
-                <NavLink name="Home" path={"/"} />
-                <NavLink name="Pop-Ups" path={"/pop-ups"} />
+            <div className="flex absolute md:py-1 lg:py-1 top-0 right-0 z-20 p-4 gap-x-2 sm:gap-x-2 md:gap-x-2 lg:gap-x-4">
+                {/* <NavLink name="Home" path={"/"} /> */}
+                {/* <NavLink name="Pop-Ups" path={"/pop-ups"} /> */}
                 <SearchBar />
+                <SideBar />
             </div>
         </div>
     )

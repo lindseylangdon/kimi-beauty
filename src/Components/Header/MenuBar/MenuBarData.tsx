@@ -12,7 +12,7 @@ export const MenuBarData = [
         path: '/sets',
     },
     {
-        title: 'View All',
-        path: '/view-all',
+        title: 'Pop-Ups',
+        path: '/pop-ups',
     }
 ];
