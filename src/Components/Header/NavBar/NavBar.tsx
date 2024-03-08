@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBar from "./SearchBar";
+import SearchBar from "../SearchBar";
 import SideBar from "../../SideBar/SideBar";
 
 export default function NavBar () {

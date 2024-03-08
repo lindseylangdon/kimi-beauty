@@ -25,7 +25,7 @@ export default function SearchBar() {
                         ref={searchInputRef}
                         type="text"
                         placeholder="Search..."
-                        className="mt-2 text-base lg:text-base md:text-base sm:text-sm text-gray-700 focus:outline-none font-mono px-1 py-1 lg:px-2 md:px-2"
+                        className="text-base text-gray-700 focus:outline-none font-mono px-1 py-1 lg:px-2 md:px-2"
                         onBlur={() => setIsExpanded(false)}
                     />
                     <button type="submit" 

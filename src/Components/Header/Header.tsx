@@ -1,8 +1,9 @@
 import React from 'react';
-import NavBar from './NavBar/NavBar';
 import Title from './Title';
 import Announcements from './Announcements';
 import MenuBar from './MenuBar/MenuBar';
+import SideBar from '../SideBar/SideBar';
+import SearchBar from './SearchBar';
 
 export default function Header () {
     const WebTitle = "kimi beauty";
@@ -13,13 +14,15 @@ export default function Header () {
             <Announcements 
                 info={announcement}
             />
-            <div className="mx-auto relative bg-pink-white flex flex-col">
-                <div className="flex flex-row items-end">
-                    {/* <SideBar /> */}
+            <div className="relative bg-pink-white flex flex-col">
+                <div className="flex justify-between items-center bg-pink-white">
                     <Title 
                         title={WebTitle}
                     />
-                    <NavBar />
+                    <div className="flex flex-row items-center gap-x-2">
+                        <SearchBar />
+                        <SideBar />
+                    </div>
                 </div>
                 <div className="bg-white">
                     <MenuBar />

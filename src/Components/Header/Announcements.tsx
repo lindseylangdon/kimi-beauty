@@ -11,7 +11,7 @@ export default function Announcements ( announcement: { info: string } ) {
     }
 
     return(
-        <div className="flex items-center justify-between gap-4 bg-pale-yellow px-4 py-1 text-gray-700">
+        <div className="flex items-center justify-between gap-4 bg-pale-yellow px-4 text-gray-700">
             <p className="text-sm lg:text-base md:text-base sm:text-sm font-medium font-mono">
                 {announcement.info}
             </p>
