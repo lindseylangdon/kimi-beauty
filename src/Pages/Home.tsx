@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Footer from "../Components/Footer/Footer";
 import Header from '../Components/Header/Header';
-import Body from '../Components/Body/HomeBody';
+import HomeBody from '../Components/Body/HomeBody';
 
 export default function Home() {
     useEffect(() => {
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
         <Header />
-        <Body />
+        <HomeBody />
         <div className="flex-grow" />
         <Footer />
     </div>

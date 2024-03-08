@@ -10,7 +10,7 @@ import MeetTeam from './Pages/FooterPages/MeetTeam';
 import Contact from './Pages/FooterPages/Contact';
 import FAQPage from './Pages/FooterPages/FAQPage';
 import AccessibilityPage from './Pages/FooterPages/AccessibilityPage';
-import ReturnsPage from './Pages/FooterPages/RerturnsPage';
+import ReturnsPage from './Pages/FooterPages/ReturnsPage';
 import DistributorsPage from './Pages/FooterPages/DistributorsPage';
 import ErrBody from './Components/Body/ErrBody';
 import PopUpBody from './Components/PopUps/PopUpBody';
