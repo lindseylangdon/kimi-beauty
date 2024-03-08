@@ -39,7 +39,7 @@ export default function SignUpForm() {
         <input
             type="email"
             id="UserEmail"
-            name="email" // Name attribute added for form data identification and autofill
+            name="email"
             placeholder="Email Address"
             value={email}
             autoComplete="email"

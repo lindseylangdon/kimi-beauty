@@ -13,7 +13,7 @@ export default function ShopByConcern() {
             </p>
             </header>
 
-            <ul className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3 md:grid-cols-2">
+            <ul className="mt-8 grid grid-cols-2 gap-4 lg:grid-cols-3 md:grid-cols-2">
                 <li className="group relative block overflow-hidden">
                     <Link to="/skincare">
                         <img
@@ -49,7 +49,7 @@ export default function ShopByConcern() {
                     </div>
                 </li>
 
-                <li className="lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1 md:col-span-2 md:col-start-1 group block overflow-hidden relative">
+                <li className="col-span-2 col-start-1 lg:col-span-2 lg:col-start-2 lg:row-span-2 lg:row-start-1 md:col-span-2 md:col-start-1 group block overflow-hidden relative">
                     <Link to="/skincare">
                         <img
                             src="/toner.jpg"
@@ -59,7 +59,7 @@ export default function ShopByConcern() {
                     </Link>
                     <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">
                         <h3 className="text-xl font-medium text-white">Sensitive Skin</h3>
-                        <a href="#" className="mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown hover:scale-105 transition-all duration-500 cursor-pointer">
+                        <a href="#" className="sm:mt-1 md:mt-1.5 lg:mt-1.5 inline-block bg-med-brown px-5 py-3 text-xs font-medium uppercase tracking-wide text-white hover:bg-pale-brown hover:scale-105 transition-all duration-500 cursor-pointer">
                             Shop Now
                         </a>
                     </div>

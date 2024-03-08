@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function ShopAll () {
+export default function ViewAll () {
     return(
         <div className="">
             <p>
-                shop all
+                view all
             </p>
         </div>
     );

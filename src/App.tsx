@@ -3,7 +3,6 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import ProductPages from './Pages/ProductPages';
 import BestSellers from './Components/Body/BestSellersBody';
-import ShopAll from './Components/Body/ShopAllBody';
 import FaceBody from './Components/Body/FaceBody';
 import EyesBody from './Components/Body/EyesBody';
 import About from './Pages/FooterPages/AboutPage';
@@ -17,6 +16,9 @@ import ErrBody from './Components/Body/ErrBody';
 import PopUpBody from './Components/PopUps/PopUpBody';
 import LipsBody from './Components/Body/LipsBody';
 import SkinBody from './Components/Body/SkinBody';
+import ViewAll from './Components/Body/ShopAllBody';
+import SetsBody from './Components/Body/SetsBody';
+import MakeupBody from './Components/Body/MakeupBody';
 
 type DisplayContextType = {
     display: boolean;
@@ -43,11 +45,13 @@ function App() {
 			<Route index element={<Home />} />
 			<Route path="/pop-ups" element={<ProductPages body={PopUpBody} />} />
             <Route path="/best-sellers" element={<ProductPages body={BestSellers} /> } />
-            <Route path="/shop-all" element={<ProductPages body={ShopAll} /> } />
+            <Route path="/view-all" element={<ProductPages body={ViewAll} /> } />
             <Route path="/face" element={<ProductPages body={FaceBody} /> } />
             <Route path="/eyes" element={<ProductPages body={EyesBody} /> } />
             <Route path="/lips" element={<ProductPages body={LipsBody} /> } />
             <Route path="/skincare" element={<ProductPages body={SkinBody} /> } /> 
+            <Route path="/makeup" element={<ProductPages body={MakeupBody} /> } />
+            <Route path="/sets" element={<ProductPages body={SetsBody} /> } />
             <Route path="/about-us" element={<About /> } />
             <Route path="/meet-the-team" element={<MeetTeam /> } />
             <Route path="/contact" element={<Contact /> } />

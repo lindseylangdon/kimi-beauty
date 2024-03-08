@@ -4,7 +4,7 @@ import { PopUpData } from "./PopUpData";
 export default function PopUpBody() {
 	return (
 	<div>
-		<span className="flex flex-col bg-white mx-auto  px-4 py-8 sm:px-6 lg:px-8">
+		<span className="flex flex-col bg-white mx-auto px-4 py-8 sm:px-6 lg:px-8">
 		{PopUpData.map((item) => (
 			<div className="font-mono text-med-brown flex flex-col" key={item.title}>
 				<div className="flex flex-row">
