@@ -5,11 +5,11 @@ export default function NowTrending() {
   return (
     <div>
         <header>
-            <h2 className="text-3xl font-bold lg:mt-4">
+            <h2 className="text-2xl font-bold lg:mt-4">
                 Now Trending
             </h2>
 
-            <p className="text-lg mt-4 text-gray-500">
+            <p className="mt-4 text-gray-500">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
                 dicta incidunt est ipsam, officia dolor fugit natus?
             </p>

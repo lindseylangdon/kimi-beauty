@@ -5,7 +5,7 @@ export default function ShopByConcern() {
   return (
         <div className="mx-auto px-5% py-2% sm:px-5% sm:py-3% lg:px-3% max-w-screen-lg mb-10">
             <header className="text-center">
-            <h2 className="text-xl font-bold text-gray-900 sm:text-3xl mt-8">Shop by Concern</h2>
+            <h2 className="text-2xl font-bold text-gray-700 mt-8">Skin Concerns?</h2>
 
             <p className="mx-auto mt-4 max-w-md text-gray-500">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure

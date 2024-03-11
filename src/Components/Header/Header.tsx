@@ -2,7 +2,7 @@ import React from 'react';
 import Title from './Title';
 import Announcements from './Announcements';
 import MenuBar from './MenuBar/MenuBar';
-import SideBar from '../SideBar/SideBar';
+import SideBar from './SideBar/SideBar';
 import SearchBar from './SearchBar';
 
 export default function Header () {
@@ -19,7 +19,7 @@ export default function Header () {
                     <Title 
                         title={WebTitle}
                     />
-                    <div className="flex flex-row items-center gap-x-2">
+                    <div className="flex flex-row items-center md:gap-x-2 lg:gap-x-2 xl:gap-x-2">
                         <SearchBar />
                         <SideBar />
                     </div>

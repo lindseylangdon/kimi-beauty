@@ -18,29 +18,29 @@ export default function SearchBar() {
     };
 
     return (
-        <div className="relative">
+        <div className="relative font-mono text-gray-700">
             {isExpanded ? (
                 <form onSubmit={handleSearch} className="flex items-center border-b border-gray-700">
                     <input
                         ref={searchInputRef}
                         type="text"
                         placeholder="Search..."
-                        className="text-base text-gray-700 focus:outline-none font-mono px-1 py-1 lg:px-2 md:px-2"
+                        className="text-sm focus:outline-none px-1 py-1 lg:px-2 md:px-2"
                         onBlur={() => setIsExpanded(false)}
                     />
                     <button type="submit" 
-                        className="mt-2 text-base lg:text-base md:text-base sm:text-sm text-gray-700 hover:text-gray-500 focus:outline-none font-mono px-2 transition-all duration-500 cursor-pointer"
+                        className="text-sm lg:text-base md:text-base sm:text-sm hover:text-gray-500 focus:outline-none px-2 transition-all duration-500 cursor-pointer"
                     >
                         enter
                     </button>
                 </form>
             ) : (
                 <span
-                    className="text-lg text-gray-700 hover:text-gray-500 focus:outline-none underline font-mono cursor-pointer"
+                    className="text-lg hover:text-gray-500 focus:outline-none underline cursor-pointer"
                     onClick={() => setIsExpanded(true)} // Expand the search bar when the text is clicked
                 >
                     <button className="text-gray-600 hover:text-gray-500 focus:outline-none underline hover:scale-110 transition-all duration-500 cursor-pointer">
-                        <AiOutlineSearch className="w-8 h-8 lg:h-12 w-12 md:h-12 w-12 sm:h-8 w-8 mt-1"/>
+                        <AiOutlineSearch className="h-6 w-6 lg:h-8 lg:w-8 md:h-8 md:w-8 sm:w-6 sm:h-6 mt-1"/>
                     </button>
                 </span>
             )}

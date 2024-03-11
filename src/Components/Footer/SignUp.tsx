@@ -33,7 +33,7 @@ export default function SignUpForm() {
 
     return (
         <div>
-            <form className="w-full font-mono " onSubmit={handleSubmit}>
+            <form className="w-full font-mono" onSubmit={handleSubmit}>
                 <label htmlFor="UserEmail" className="sr-only">
                     Email Address
                 </label>
