@@ -13,7 +13,7 @@ export default function FeedBackBody () {
     }
  
     return(
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8 font-mono">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-4 lg:grid-cols-4 lg:gap-8 font-mono">
             <div className="h-32">
                 <p className="text-2xl font-bold">
                     We love customer feedback!
@@ -22,7 +22,7 @@ export default function FeedBackBody () {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
                 </p>
             </div>
-            <div className="bg-white p-8 shadow-lg lg:col-span-3">
+            <div className="bg-white p-8 shadow-lg md:col-span-3 lg:col-span-3">
                 <form onChange={handleChange} className="space-y-4">
                     <div>
                         <label className="sr-only" htmlFor="name">Name</label>
@@ -35,7 +35,7 @@ export default function FeedBackBody () {
                         />
                     </div>
 
-                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                    <div className="grid grid-cols-2 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
                         <div>
                         <label className="sr-only" htmlFor="email">Email</label>
                         <input
@@ -67,6 +67,7 @@ export default function FeedBackBody () {
                         placeholder="Message..."
                         rows={8}
                         id="message"
+                        required
                         ></textarea>
                     </div>
                     {feedback &&
