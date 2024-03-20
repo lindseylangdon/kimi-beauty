@@ -20,7 +20,7 @@ export default function SideBar() {
                 {/* Close button */}
                 {isOpen && (
                     <div className="absolute top-0 right-0 z-40 p-4">
-                        <button onClick={toggleSidebar} className="text-gray-700 text-xl font-bold font-mono bg-latte rounded-lg p-1">
+                        <button onClick={toggleSidebar} className="text-gray-700 text-lg font-bold font-mono bg-latte rounded-lg p-1">
                             <AiOutlineClose />
                         </button>
                     </div>

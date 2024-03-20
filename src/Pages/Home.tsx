@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import Footer from "../Components/Footer/Footer";
 import Header from '../Components/Header/Header';
 import HomeBody from '../Components/Body/HomeBody';
@@ -12,9 +12,9 @@ export default function Home() {
     //         .then((data) => setData(data.message));
     // }, []);
 
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
   return (
     <div className="flex flex-col min-h-screen">

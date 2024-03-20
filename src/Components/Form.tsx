@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "./Button";
 
 export default function Form ( ) {
     const [feedback, setFeedback] = useState(false);
@@ -66,12 +67,14 @@ export default function Form ( ) {
                 </div>
             }
             <div className="mt-4">
-                <button
-                type="submit"
-                className="text-sm inline-block bg-bright-orange px-5 py-2 text-white sm:w-auto"
+                <Button 
+                    bgColor="bg-white hover:scale-105 transition-all duration-500 cursor-pointer" 
+                    text="text-gray-700 text-sm" 
+                    border="border-b border-r border-gray-700 shadow-md"
+                    sizes="inline-block px-5 py-2 sm:w-auto"
                 >
-                Send Feedback
-                </button>
+                    Send Feedback
+                </Button>
             </div>
         </form>
     );

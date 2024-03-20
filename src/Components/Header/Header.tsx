@@ -6,19 +6,16 @@ import SideBar from './SideBar/SideBar';
 import SearchBar from './SearchBar';
 
 export default function Header () {
-    const WebTitle = "kimi beauty";
-    const announcement ="ANNOUNCEMENTS: Lorem ipsum, dolor sit amet consectetur adipisicing elit.";
-
     return(
         <div>
-            <Announcements 
-                info={announcement}
-            />
+            <Announcements>
+                ANNOUNCEMENTS: Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </Announcements>
             <div className="relative bg-pink-white flex flex-col">
                 <div className="flex justify-between items-center bg-pink-white">
-                    <Title 
-                        title={WebTitle}
-                    />
+                    <Title>
+                        kimi beauty
+                    </Title>
                     <div className="flex flex-row items-center md:gap-x-2 lg:gap-x-2 xl:gap-x-2">
                         <SearchBar />
                         <SideBar />

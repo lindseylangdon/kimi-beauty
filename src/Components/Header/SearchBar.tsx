@@ -25,6 +25,7 @@ export default function SearchBar() {
                         ref={searchInputRef}
                         type="text"
                         placeholder="Search..."
+                        id="search"
                         className="text-sm focus:outline-none px-1 py-1 lg:px-2 md:px-2"
                         onBlur={() => setIsExpanded(false)}
                     />

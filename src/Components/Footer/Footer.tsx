@@ -14,7 +14,7 @@ export default function Footer() {
 						<h2 className="text-2xl font-bold mt-4">
 							Get the latest news!
 						</h2>
-						<p className="mt-2 mb-4">
+						<p className="mt-2 mb-4 text-gray-500 ">
 							Sign up for our company newsletter to get first access to new products and deals!
 						</p>
 						<SignUpForm />
@@ -23,30 +23,30 @@ export default function Footer() {
 			</div>
 
 			{/* Footer Links */}
-			<div className="grid grid-cols-2 mt-6 gap-8 sm:grid-cols-2 sm:place-items-left md:grid-cols-3 md:place-items-left lg:grid-cols-3 lg:place-items-center">
+			<div className="grid grid-cols-2 mt-6 gap-8 sm:grid-cols-2 sm:place-items-left md:grid-cols-3 md:place-items-left lg:grid-cols-3 lg:place-items-center text-sm">
 				<div className="space-y-4">
-				<h3 className="text-lg font-bold">Company</h3>
-				<ul className="space-y-2">
-					<li><Link to="/about-us" className="text-gray-700 hover:underline hover:text-gray-500">About</Link></li>
-					<li><Link to="/meet-the-team" className="text-gray-700 hover:underline hover:text-gray-500">Meet the Team</Link></li>
-				</ul>
+                    <h3 className="text-base font-bold">Company</h3>
+                    <ul className="space-y-2 text-gray-500">
+                        <li><Link to="/about-us" className="text-gray-700 hover:underline hover:text-gray-500">About</Link></li>
+                        <li><Link to="/meet-the-team" className="text-gray-700 hover:underline hover:text-gray-500">Meet the Team</Link></li>
+                    </ul>
 				</div>
 
 				<div className="space-y-4">
-				<h3 className="text-lg font-bold">Helpful Links</h3>
-				<ul className="space-y-2">
-					<li><Link to="/contact" className="text-gray-700 hover:underline hover:text-gray-500">Contact</Link></li>
-					<li><Link to="/faqs" className="text-gray-700 hover:underline hover:text-gray-500">FAQs</Link></li>
-				</ul>
+                    <h3 className="text-base font-bold">Helpful Links</h3>
+                    <ul className="space-y-2">
+                        <li><Link to="/contact" className="text-gray-700 hover:underline hover:text-gray-500">Contact</Link></li>
+                        <li><Link to="/faqs" className="text-gray-700 hover:underline hover:text-gray-500">FAQs</Link></li>
+                    </ul>
 				</div>
 
 				<div className="space-y-4">
-				<h3 className="text-lg font-bold">Legal</h3>
-				<ul className="space-y-2">
-					<li><Link to="/accessibility" className="text-gray-700 hover:underline hover:text-gray-500">Accessibility</Link></li>
-					<li><Link to="/returns-exchanges" className="text-gray-700 hover:underline hover:text-gray-500">Returns and Exchanges</Link></li>
-					<li><Link to="/our-distributors" className="text-gray-700 hover:underline hover:text-gray-500">Our Distributors</Link></li>
-				</ul>
+                    <h3 className="text-base font-bold">Legal</h3>
+                    <ul className="space-y-2">
+                        <li><Link to="/accessibility" className="text-gray-700 hover:underline hover:text-gray-500">Accessibility</Link></li>
+                        <li><Link to="/returns-exchanges" className="text-gray-700 hover:underline hover:text-gray-500">Returns and Exchanges</Link></li>
+                        <li><Link to="/our-distributors" className="text-gray-700 hover:underline hover:text-gray-500">Our Distributors</Link></li>
+                    </ul>
 				</div>
 			</div>
 
@@ -55,9 +55,9 @@ export default function Footer() {
 				<p className="text-sm text-center lg:text-left text-gray-700">
 				&copy; 2024 Kimi Beauty LLC. All rights reserved.
 				</p>
-				<div className="flex justify-center space-x-6 mt-4 lg:mt-0">
-				<a href="#" className="text-gray-700 hover:opacity-75">Facebook</a>
-				<a href="#" className="text-gray-700 hover:opacity-75">Instagram</a>
+				<div className="flex justify-center space-x-6 mt-4 lg:mt-0 text-sm">
+                    <a href="#" className="text-gray-700 hover:opacity-75">Facebook</a>
+                    <a href="#" className="text-gray-700 hover:opacity-75">Instagram</a>
 				</div>
 			</div>
 		</div>
