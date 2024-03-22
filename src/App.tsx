@@ -43,7 +43,7 @@ function App() {
 		<Routes>
 			<Route path="/" element={<Home />} />
 			<Route index element={<Home />} />
-			<Route path="/pop-ups" element={<ProductPages body={PopUpBody} />} />
+			<Route path="/locations" element={<ProductPages body={PopUpBody} />} />
             <Route path="/best-sellers" element={<ProductPages body={BestSellers} /> } />
             <Route path="/view-all" element={<ProductPages body={ViewAll} /> } />
             <Route path="/face" element={<ProductPages body={FaceBody} /> } />

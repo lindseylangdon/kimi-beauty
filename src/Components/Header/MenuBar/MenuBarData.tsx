@@ -1,18 +1,18 @@
 export const MenuBarData = [
     {
-        title: 'Skincare',
+        title: 'skincare',
         path: '/skincare',
     },
     {
-        title: 'Makeup',
+        title: 'makeup',
         path: '/makeup',
     },
     {
-        title: 'Sets',
-        path: '/sets',
+        title: 'about',
+        path: '/about-us',
     },
     {
-        title: 'Pop-Ups',
-        path: '/pop-ups',
+        title: 'locations',
+        path: '/locations',
     }
 ];

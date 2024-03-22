@@ -19,7 +19,7 @@ export default function ShopByConcern() {
                         <img
                             src="/anua-green.jpg"
                             alt=""
-                            className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
+                            className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105 group-hover:opacity-90"
                         />
                     </Link>
 
@@ -38,7 +38,7 @@ export default function ShopByConcern() {
                         <img
                             src="/cleansing-oil.jpg"
                             alt=""
-                            className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
+                            className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105 group-hover:opacity-90"
                         />
                     </Link>
                     <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">
@@ -54,7 +54,7 @@ export default function ShopByConcern() {
                         <img
                             src="/toner.jpg"
                             alt=""
-                            className="aspect-square w-full object-cover transition duration-500 group-hover:opacity-90"
+                            className="aspect-square w-full object-cover transition duration-500 group-hover:scale-105 group-hover:opacity-90"
                         />
                     </Link>
                     <div className="absolute bottom-0 left-0 right-0 bg-med-brown bg-opacity-50 p-6">

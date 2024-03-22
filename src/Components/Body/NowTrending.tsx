@@ -5,7 +5,7 @@ export default function NowTrending() {
   return (
     <div>
         <header>
-            <h2 className="text-2xl font-bold lg:mt-4">
+            <h2 className="text-2xl font-bold mt-4">
                 Now Trending
             </h2>
 

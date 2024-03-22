@@ -14,7 +14,7 @@ export default function About () {
         <div className="flex flex-col min-h-screen">
             <Header />
             <div className="mb-10 font-mono padding-x padding-y font-mono text-gray-500">
-                <h1 className="font-bold text-2xl text-gray-700">about kimi beauty...</h1>
+                <h1 className="font-bold text-2xl text-gray-700 mt-4">about kimi beauty...</h1>
                 <div className="text-center mt-4">
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -47,6 +47,11 @@ export default function About () {
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
+                <br />
+                <br />
+                <p className="text-xl font-bold text-gray-700">
+                duis aute irure!
+                </p>
                 <br />
                 <Link to="/">
                     <Button 

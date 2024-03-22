@@ -22,7 +22,7 @@ export default function Announcements ( {children} : AnnouncementProps ) {
 
             <button
                 aria-label="Dismiss"
-                className="shrink-0 rounded-lg bg-black/10 p-1 transition hover:bg-black/20"
+                className="shrink-0 rounded-lg bg-black/10 p-1 transition hover:bg-black/20 hover:scale-105 transition duration-500"
                 onClick={() => setDisplay(false)}
             >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
