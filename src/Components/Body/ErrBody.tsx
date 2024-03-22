@@ -5,11 +5,11 @@ export default function ErrBody () {
         <div className="bg-white flex flex-col items-center justify-center">
             <br>
             </br>
-            <div className="flex flex-row">
-                <h1 className="font-mono font-bold text-xl text-med-brown text-center">
+            <div className="flex flex-row font-mono text-xl text-gray-700 text-center">
+                <h1 className="font-bold">
                     404: 
                 </h1>
-                <h1 className="font-mono text-xl text-med-brown text-center">
+                <h1>
                     The page you are looking for doesn't exist!
                 </h1>
             </div>

@@ -4,6 +4,7 @@ import Footer from "../../Components/Footer/Footer";
 import { useEffect } from "react";
 import Button from "../../Components/Button";
 import { Link } from "react-router-dom";
+import PageTitle from "../../Components/PageTitle";
 
 export default function About () {
     useEffect(() => {
@@ -11,11 +12,13 @@ export default function About () {
     }, []);
     
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen font-mono text-gray-700">
             <Header />
-            <div className="mb-10 font-mono padding-x padding-y font-mono text-gray-500">
-                <h1 className="font-bold text-2xl text-gray-700 mt-4">about kimi beauty...</h1>
-                <div className="text-center mt-4">
+            <div className="mb-10 padding-x padding-y">
+                <PageTitle>
+                    About Us
+                </PageTitle>
+                <div className="text-center text-gray-500">
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.

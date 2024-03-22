@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import Button from "./Button";
 
-export default function Form ( ) {
+interface FormProps {
+    buttonString: string;
+}
+
+export default function Form ( { buttonString }: FormProps ) {
     const [feedback, setFeedback] = useState(false);
 
     const handleChange = (e: any) => {
@@ -73,7 +77,7 @@ export default function Form ( ) {
                     border="border-b border-r border-gray-700 shadow-md"
                     sizes="inline-block px-5 py-2 sm:w-auto"
                 >
-                    Send Feedback
+                    {buttonString}
                 </Button>
             </div>
         </form>

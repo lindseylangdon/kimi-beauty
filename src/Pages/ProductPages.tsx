@@ -9,9 +9,9 @@ export default function ProductPages ( { body: BodyComponent } : { body: Compone
     }, []);
     
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen font-mono text-gray-700">
             <Header />
-            <div className="flex-grow">
+            <div className="mb-10 padding-x padding-y">
                 <BodyComponent />
             </div>
             <Footer />

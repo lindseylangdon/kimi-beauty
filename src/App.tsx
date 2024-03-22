@@ -17,7 +17,6 @@ import PopUpBody from './Components/PopUps/PopUpBody';
 import LipsBody from './Components/Body/LipsBody';
 import SkinBody from './Components/Body/SkinBody';
 import ViewAll from './Components/Body/ShopAllBody';
-import SetsBody from './Components/Body/SetsBody';
 import MakeupBody from './Components/Body/MakeupBody';
 
 type DisplayContextType = {
@@ -51,7 +50,6 @@ function App() {
             <Route path="/lips" element={<ProductPages body={LipsBody} /> } />
             <Route path="/skincare" element={<ProductPages body={SkinBody} /> } /> 
             <Route path="/makeup" element={<ProductPages body={MakeupBody} /> } />
-            <Route path="/sets" element={<ProductPages body={SetsBody} /> } />
             <Route path="/about-us" element={<About /> } />
             <Route path="/meet-the-team" element={<MeetTeam /> } />
             <Route path="/contact" element={<Contact /> } />

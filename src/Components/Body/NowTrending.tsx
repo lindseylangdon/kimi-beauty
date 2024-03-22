@@ -1,15 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PageTitle from '../PageTitle'
 
 export default function NowTrending() {
   return (
     <div>
         <header>
-            <h2 className="text-2xl font-bold mt-4">
+            <PageTitle>
                 Now Trending
-            </h2>
+            </PageTitle>
 
-            <p className="mt-4 text-gray-500">
+            <p className="text-gray-500">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure
                 dicta incidunt est ipsam, officia dolor fugit natus?
             </p>

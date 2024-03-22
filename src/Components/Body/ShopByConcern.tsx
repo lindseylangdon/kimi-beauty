@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import PageTitle from '../PageTitle';
 
 export default function ShopByConcern() {
   return (
-        <div className="mx-auto px-5% py-2% sm:px-5% sm:py-3% lg:px-3% max-w-screen-lg mb-10">
+        <div className="mx-auto px-5% py-2% sm:px-5% sm:py-3% lg:px-3% max-w-screen-lg">
             <header className="text-center">
-            <h2 className="text-2xl font-bold text-gray-700 mt-8">Skin Concerns?</h2>
+            <PageTitle>
+                Skin Concerns?
+            </PageTitle>
 
             <p className="mx-auto mt-4 max-w-md text-gray-500">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque praesentium cumque iure

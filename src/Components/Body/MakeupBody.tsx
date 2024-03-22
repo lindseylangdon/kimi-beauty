@@ -1,7 +1,12 @@
 import React from 'react'
+import PageTitle from '../PageTitle';
 
 export default function MakeupBody() {
   return (
-    <div>MakeupBody</div>
+    <div className="">
+        <PageTitle>
+            All Makeup
+        </PageTitle>
+    </div>
   );
 }

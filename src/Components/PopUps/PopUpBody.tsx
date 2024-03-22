@@ -1,11 +1,14 @@
 import React from "react";
 import { PopUpData } from "./PopUpData";
+import PageTitle from "../PageTitle";
 
 export default function PopUpBody() {
 	return (
-	<div className="mb-10">
-        <br />
-		<span className="flex flex-col bg-white padding-x padding-y font-mono text-gray-700">
+	<div>
+        <PageTitle>
+            Upcoming Locations
+        </PageTitle>
+		<span className="">
 		{PopUpData.map((item) => (
 			<div className="flex flex-col" key={item.title}>
 				<div className="flex flex-row">

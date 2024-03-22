@@ -1,11 +1,12 @@
 import React from "react";
+import PageTitle from "../PageTitle";
 
 export default function SkinBody () {
     return(
         <div className="">
-            <p>
-                skannn
-            </p>
+            <PageTitle>
+                All Skincare
+            </PageTitle>
         </div>
     );
 }

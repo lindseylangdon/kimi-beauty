@@ -3,6 +3,7 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import { useEffect } from "react";
 import Accordion from "../../Components/Accordion/Accordion";
+import PageTitle from "../../Components/PageTitle";
 
 const faqs = [
     {
@@ -35,10 +36,10 @@ export default function FAQPage () {
     return (
         <div className="flex flex-col min-h-screen font-mono text-gray-700">
             <Header />
-            <div className="mb-10 font-mono text-gray-700 padding-x padding-y">
-                <h2 className="text-2xl font-bold mt-4 mb-4">
-                    frequently asked questions...
-                </h2>
+            <div className="mb-10 padding-x padding-y">
+                <PageTitle>
+                    Frequently Asked Questions
+                </PageTitle>
                 <Accordion data={faqs} />
             </div>
             <Footer />
